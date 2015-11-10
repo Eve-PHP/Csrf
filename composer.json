@@ -1,8 +1,8 @@
 {
-    "name": "eve-php/csrf",
+    "name": "eve-php/eve-plugin-csrf",
     "type": "plugin",
     "description": "CSRF Plugin for the Eve Framework",
-    "keywords": ["eden", "library"],
+    "keywords": ["eve", "plugin"],
     "homepage": "http://eve.openovate.com",
     "license": "MIT",
     "authors": [
@@ -16,6 +16,6 @@
 		"eden/registry": "4.*"
     },
     "autoload": {
-         "psr-4": { "Eve\\Csrf\\": "src/" }
+         "psr-4": { "Eve\\Plugin\\Csrf\\": "src/" }
     }
 }

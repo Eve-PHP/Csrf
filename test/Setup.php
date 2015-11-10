@@ -7,11 +7,11 @@
  * distributed with this package.
  */
 
-class Eve_Csrf_Plugin extends PHPUnit_Framework_TestCase
+class Eve_Plugin_Csrf_Setup extends PHPUnit_Framework_TestCase
 {
     public function testImport()
     {
-        $callback = Eve\Csrf\Plugin::i()->import();
+        $callback = Eve\Plugin\Csrf\Setup::i()->import();
 		
 		$this->assertTrue(is_callable($callback));
 		

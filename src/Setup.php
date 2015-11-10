@@ -7,7 +7,7 @@
  * distributed with this package.
  */
 
-namespace Eve\Csrf;
+namespace Eve\Plugin\Csrf;
 
 use Eden\Registry\Index as Registry;
 
@@ -19,12 +19,12 @@ use Eden\Registry\Index as Registry;
  * @author   Christian Blanquera <cblanquera@openovate.com>
  * @standard PSR-2
  */
-class Plugin extends Base
+class Setup extends Base
 {
-	/**
-	 * @const string FAIL_400 Error Template
-	 */
-	const FAIL_400 = 'We prevented a potential attack on our servers coming from the request you just sent us.';
+    /**
+     * @const string FAIL_400 Error Template
+     */
+    const FAIL_400 = 'We prevented a potential attack on our servers coming from the request you just sent us.';
 
     /**
      * Main route method
@@ -35,13 +35,16 @@ class Plugin extends Base
     {
         //remember this scope
         $self = $this;
-		$message = self::FAIL_400;
+        $message = self::FAIL_400;
         
         eve()->addMethod('addCsrf', function (
             Registry $request,
             Registry $response,
             array $meta
-        ) use ($self, $message) {
+        ) use (
+            $self,
+            $message
+) {
             //we already checked the csrf it's good
             //we just need to check if it's set
             

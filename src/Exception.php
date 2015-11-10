@@ -7,7 +7,7 @@
  * distributed with this package.
  */
 
-namespace Eve\Csrf;
+namespace Eve\Plugin\Csrf;
 
 /**
  * Exception Class

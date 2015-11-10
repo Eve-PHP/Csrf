@@ -1,6 +1,8 @@
+![logo](http://eden.openovate.com/assets/images/cloud-social.png) Eve CSRF Plugin
 ====
 CSRF checker for the Eve Framework
 ====
+[![Build Status](https://api.travis-ci.org/eve-php/eve-plugin-csrf.png)](https://travis-ci.org/eve-php/eve-plugin-csrf)
 ====
 
 - [Install](#install)
@@ -11,6 +13,7 @@ CSRF checker for the Eve Framework
 <a name="install"></a>
 ## Install
 
+`composer install eve-php/eve-plugin-csrf`
 
 ====
 
@@ -21,6 +24,7 @@ CSRF checker for the Eve Framework
 
 ```
 //CSRF
+->add(Eve\Plugin\Csrf\Setup::i()->import('1234567890'))
 ```
 
 `'1234567890'` is the escape key you use when writing tests for pages using this plugin.

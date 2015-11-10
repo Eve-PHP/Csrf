@@ -2,7 +2,7 @@
 ====
 CSRF checker for the Eve Framework
 ====
-[![Build Status](https://api.travis-ci.org/eve-php/eve-plugin-csrf.png)](https://travis-ci.org/eve-php/eve-plugin-csrf)
+[![Build Status](https://api.travis-ci.org/eve-php/eve-plugin-csrf.png)](https://travis-ci.org/eve-php/eve-plugin-csrf) [![Latest Stable Version](https://poser.pugx.org/eve-php/eve-plugin-csrf/v/stable)](https://packagist.org/packages/eve-php/eve-plugin-csrf) [![Total Downloads](https://poser.pugx.org/eve-php/eve-plugin-csrf/downloads)](https://packagist.org/packages/eve-php/eve-plugin-csrf) [![Latest Unstable Version](https://poser.pugx.org/eve-php/eve-plugin-csrf/v/unstable)](https://packagist.org/packages/eve-php/eve-plugin-csrf) [![License](https://poser.pugx.org/eve-php/eve-plugin-csrf/license)](https://packagist.org/packages/eve-php/eve-plugin-csrf)
 ====
 
 - [Install](#install)
